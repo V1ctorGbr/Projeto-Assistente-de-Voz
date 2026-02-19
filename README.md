@@ -20,7 +20,7 @@ Desenvolver um projeto organizado e escalável
 Criar um diferencial para portfólio
 
 3. Escopo do Sistema
-✅ Funcionalidades Iniciais
+3.1 Funcionalidades Iniciais
 
 Capturar áudio do microfone
 
@@ -36,7 +36,7 @@ Desligar ou reiniciar o computador
 
 Automatizar ações simples com teclado/mouse
 
-🔜 Funcionalidades Futuras
+3.2 Funcionalidades Futuras
 
 Integração com API de IA (OpenAI)
 
@@ -52,19 +52,17 @@ Sistema de permissões e segurança
 
 O sistema será dividido em camadas:
 
-1️⃣ Camada de Captura de Voz
+4.1 Camada de Captura de Voz
 
 Responsável por capturar o áudio do microfone.
-
 Tecnologia: PyAudio
 
-2️⃣ Camada de Reconhecimento de Fala
+4.2 Camada de Reconhecimento de Fala
 
 Responsável por converter áudio em texto.
-
 Tecnologia: SpeechRecognition
 
-3️⃣ Camada de Processamento de Comandos
+4.3 Camada de Processamento de Comandos
 
 Interpreta o texto reconhecido e identifica qual ação deve ser executada.
 
@@ -72,7 +70,7 @@ Estrutura inicial: if/else
 
 Evolução futura: mapeamento por dicionário ou NLP
 
-4️⃣ Camada de Execução de Ações
+4.4 Camada de Execução de Ações
 
 Executa comandos no sistema operacional.
 
@@ -84,7 +82,7 @@ subprocess
 
 PyAutoGUI
 
-5️⃣ Camada Opcional de Inteligência Artificial
+4.5 Camada Opcional de Inteligência Artificial
 
 Integração com API externa para interpretar comandos mais complexos.
 
@@ -93,7 +91,7 @@ Tecnologia opcional:
 OpenAI API
 
 5. Requisitos do Sistema
-Requisitos Funcionais
+5.1 Requisitos Funcionais
 
 O sistema deve capturar áudio do microfone
 
@@ -103,7 +101,7 @@ O sistema deve reconhecer comandos pré-definidos
 
 O sistema deve executar ações no Windows
 
-Requisitos Não Funcionais
+5.2 Requisitos Não Funcionais
 
 O sistema deve ser modular
 
@@ -113,22 +111,7 @@ O sistema deve rodar localmente
 
 O sistema deve ter organização profissional de código
 
-6. Estrutura de Pastas
-assistente-voz/
-│
-├── src/
-│   ├── main.py
-│   ├── voice/
-│   ├── commands/
-│   ├── system/
-│   └── config/
-│
-├── tests/
-│
-├── requirements.txt
-└── README.md
-
-7. Fluxo de Execução do Sistema
+6. Fluxo de Execução do Sistema
 
 Sistema inicia
 
@@ -144,7 +127,7 @@ Comando correspondente é executado
 
 Sistema retorna confirmação
 
-8. Tecnologias Utilizadas
+7. Tecnologias Utilizadas
 
 Python 3.x
 
@@ -154,6 +137,6 @@ PyAudio
 
 PyAutoGUI
 
-OS / Subprocess
+os / subprocess
 
 (Opcional) OpenAI API
